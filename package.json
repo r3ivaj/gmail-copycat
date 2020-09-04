@@ -1,0 +1,44 @@
+{
+  "name": "my-razzle-app",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "razzle start --type=spa",
+    "build": "razzle build --type=spa",
+    "test": "razzle test --env=jest-environment-jsdom-sixteen",
+    "start:prod": "serve -s build/public"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "@rebass/forms": "^4.0.6",
+    "@rebass/preset": "^4.0.5",
+    "date-fns": "^2.16.1",
+    "emotion-theming": "^10.0.27",
+    "express": "^4.17.1",
+    "ramda": "^0.27.1",
+    "razzle": "^3.1.7",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "rebass": "^4.0.7",
+    "striptags": "^3.1.1",
+    "swr": "^0.3.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.0.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.8.1",
+    "eslint-plugin-jest": "^23.20.0",
+    "eslint-plugin-react": "^7.20.6",
+    "jest": "^26.4.2",
+    "jest-environment-jsdom-sixteen": "^1.0.3"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "@app(.*)$": "<rootDir>/src/$1"
+    }
+  }
+}
